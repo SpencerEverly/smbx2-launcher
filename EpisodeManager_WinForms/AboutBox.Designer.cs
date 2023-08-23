@@ -33,20 +33,14 @@
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroTile6 = new MetroFramework.Controls.MetroTile();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTile1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,51 +96,39 @@
             this.metroTile4.BackColor = System.Drawing.Color.Transparent;
             this.metroTile4.Location = new System.Drawing.Point(291, 216);
             this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(128, 134);
+            this.metroTile4.Size = new System.Drawing.Size(184, 134);
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroTile4.TabIndex = 4;
             this.metroTile4.Text = "GitHub";
             this.metroTile4.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
             // 
-            // metroTile5
-            // 
-            this.metroTile5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.metroTile5.Location = new System.Drawing.Point(425, 216);
-            this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(128, 64);
-            this.metroTile5.Style = MetroFramework.MetroColorStyle.Lime;
-            this.metroTile5.TabIndex = 5;
-            this.metroTile5.Text = "Twitter";
-            this.metroTile5.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile5.Click += new System.EventHandler(this.metroTile5_Click);
-            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(213, 134);
+            this.metroLabel1.Location = new System.Drawing.Point(209, 129);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(151, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(107, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 8;
-            this.metroLabel1.Text = "SMBX Episode Manager";
+            this.metroLabel1.Text = "SMBX2 Launcher";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(240, 153);
+            this.metroLabel2.Location = new System.Drawing.Point(167, 148);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(98, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(310, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel2.TabIndex = 9;
-            this.metroLabel2.Text = "By Luigifan2010";
+            this.metroLabel2.Text = "Originally by Luigifan2010, forked by Spencer Everly";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(266, 194);
+            this.metroLabel3.Location = new System.Drawing.Point(237, 188);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(44, 19);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Blue;
@@ -154,22 +136,10 @@
             this.metroLabel3.Text = "1.0.0.0";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroTile6
-            // 
-            this.metroTile6.BackColor = System.Drawing.Color.Transparent;
-            this.metroTile6.Location = new System.Drawing.Point(425, 286);
-            this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(128, 64);
-            this.metroTile6.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTile6.TabIndex = 12;
-            this.metroTile6.Text = "Tumblr";
-            this.metroTile6.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
-            // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(250, 173);
+            this.metroLabel4.Location = new System.Drawing.Point(221, 167);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(80, 19);
             this.metroLabel4.Style = MetroFramework.MetroColorStyle.Blue;
@@ -177,38 +147,12 @@
             this.metroLabel4.Text = "redigitiscool";
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Image = global::EpisodeManager_WinForms.Properties.Resources.tumblr_32;
-            this.pictureBox5.Location = new System.Drawing.Point(496, 298);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(38, 40);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.metroTile6_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(188)))), ((int)(((byte)(0)))));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Image = global::EpisodeManager_WinForms.Properties.Resources.twitter_32;
-            this.pictureBox4.Location = new System.Drawing.Point(496, 227);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 40);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.metroTile5_Click);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Image = global::EpisodeManager_WinForms.Properties.Resources.github_dark;
-            this.pictureBox3.Location = new System.Drawing.Point(323, 245);
+            this.pictureBox3.Location = new System.Drawing.Point(350, 245);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 64);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -220,7 +164,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::EpisodeManager_WinForms.Properties.Resources.Icon_SMB3;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(256, 63);
+            this.pictureBox1.Location = new System.Drawing.Point(227, 57);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -231,21 +175,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 367);
+            this.ClientSize = new System.Drawing.Size(501, 367);
             this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.metroTile5);
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.metroTile3);
             this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.metroTile6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutBox";
@@ -260,8 +200,6 @@
             this.Load += new System.EventHandler(this.AboutBox_Load);
             this.metroTile1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -276,15 +214,11 @@
         private MetroFramework.Controls.MetroTile metroTile2;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
-        private MetroFramework.Controls.MetroTile metroTile5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private MetroFramework.Controls.MetroTile metroTile6;
         private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }

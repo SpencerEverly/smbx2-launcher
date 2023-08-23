@@ -102,7 +102,7 @@ namespace EpisodeManager_WinForms
             {
 
             }
-            checkForUpdates();
+            //checkForUpdates();
             //
             try
             {
@@ -181,9 +181,9 @@ namespace EpisodeManager_WinForms
         {
             if (File.Exists(Environment.CurrentDirectory + @"\settings.ini") != true)
             {
-                settingsIni.WriteValue("Settings", "worldlocation", @"C:\SMBX\worlds");
-                settingsIni.WriteValue("Settings", "smbxpath", @"C:\SMBX\");
-                settingsIni.WriteValue("Settings", "executableloc", @"C:\SMBX\smbx.exe");
+                settingsIni.WriteValue("Settings", "worldlocation", @"C:\SMBX2\data\worlds");
+                settingsIni.WriteValue("Settings", "smbxpath", @"C:\SMBX2\data");
+                settingsIni.WriteValue("Settings", "executableloc", @"C:\SMBX2\data\LunaLoader.exe");
             }
         }
         private void writeInitialPaths()
@@ -224,8 +224,8 @@ namespace EpisodeManager_WinForms
             }
             if(localEpisodes.localEpisodesListview.Items.Count == 0)
             {
-                localEpisodes.episodeNameLabel.Text = "No episodes found! :(";
-                localEpisodes.authorName.Text = "Install some manually or by going to the 'Available Episodes' tab";
+                localEpisodes.episodeNameLabel.Text = "No episodes found.";
+                localEpisodes.authorName.Text = "Install some manually or by going to the 'Episode World' tab.";
                 localEpisodes.forumTopicButton.Visible = false;
                 localEpisodes.updateButton.Visible = false;
             }
@@ -285,9 +285,25 @@ namespace EpisodeManager_WinForms
                 {
                     launchSMBXMenu.Text = "Launch SMBX 1.3";
                 }
+                else if (GetFileVersionInfo(smbxExeLoc) == "1.2.0.2")
+                {
+                    launchSMBXMenu.Text = "Launch SMBX 1.2.2";
+                }
+                else if (GetFileVersionInfo(smbxExeLoc) == "1.1.0.1")
+                {
+                    launchSMBXMenu.Text = "Launch SMBX 1.1.1";
+                }
+                lse if (GetFileVersionInfo(smbxExeLoc) == "1.00")
+                {
+                    launchSMBXMenu.Text = "Launch SMBX 1.0";
+                }
+                else if (GetFileVersionInfo(smbxExeLoc) == "1.4.0.5")
+                {
+                    launchSMBXMenu.Text = "Launch SMBX38A";
+                }
                 else
                 {
-                    launchSMBXMenu.Text = "Launch SMBX " + GetFileVersionInfo(smbxExeLoc);
+                    launchSMBXMenu.Text = "Launch SMBX2";
                 }
             }
             if (File.Exists(Environment.CurrentDirectory + @"\IndexGenerator.exe"))
@@ -344,6 +360,7 @@ namespace EpisodeManager_WinForms
             {
                 case DialogResult.Yes:
                     File.Delete(Main_NEW.smbxWorldsDir + @"\" + Main_NEW.selectedFolderName + @"\save1.sav");
+                    File.Delete(Main_NEW.smbxWorldsDir + @"\" + Main_NEW.selectedFolderName + @"\save1-ext.dat");
                     break;
                 case DialogResult.No:
                     break;
@@ -457,7 +474,11 @@ namespace EpisodeManager_WinForms
 
         private void launchSMBXMenu_Click(object sender, EventArgs e)
         {
-            if(File.Exists(smbxExeLoc))
+            if (File.Exists(smbxExeLoc) && launchSMBXMenu.Text = "Launch SMBX2")
+            {
+                Process.Start(smbxExeLoc, "");
+            }
+            else
             {
                 Process.Start(smbxExeLoc);
             }

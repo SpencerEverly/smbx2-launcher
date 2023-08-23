@@ -30,7 +30,7 @@ namespace EpisodeManager_WinForms
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
-            Process.Start("http://luigifan2010.prophpbb.com/");
+            Process.Start("http://smbxgame.com/forums/");
         }
 
         private void metroTile2_Click(object sender, EventArgs e)
@@ -45,7 +45,7 @@ namespace EpisodeManager_WinForms
 
         private void metroTile4_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/Luigifan/smbx-epmanager-ver3");
+            Process.Start("https://github.com/SpencerEverly/smbx2-launcher");
         }
 
         private void metroTile5_Click(object sender, EventArgs e)
