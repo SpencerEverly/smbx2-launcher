@@ -293,7 +293,7 @@ namespace EpisodeManager_WinForms
                 {
                     launchSMBXMenu.Text = "Launch SMBX 1.1.1";
                 }
-                lse if (GetFileVersionInfo(smbxExeLoc) == "1.00")
+                else if (GetFileVersionInfo(smbxExeLoc) == "1.00")
                 {
                     launchSMBXMenu.Text = "Launch SMBX 1.0";
                 }
@@ -474,13 +474,16 @@ namespace EpisodeManager_WinForms
 
         private void launchSMBXMenu_Click(object sender, EventArgs e)
         {
-            if (File.Exists(smbxExeLoc) && launchSMBXMenu.Text = "Launch SMBX2")
+            if (File.Exists(smbxExeLoc))
             {
-                Process.Start(smbxExeLoc, "");
-            }
-            else
-            {
-                Process.Start(smbxExeLoc);
+                if (launchSMBXMenu.Text = "Launch SMBX2")
+                {
+                    Process.Start(smbxExeLoc, "");
+                }
+                else
+                {
+                    Process.Start(smbxExeLoc);
+                }
             }
         }
 

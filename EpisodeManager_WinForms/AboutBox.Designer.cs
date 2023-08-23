@@ -117,7 +117,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(167, 148);
+            this.metroLabel2.Location = new System.Drawing.Point(113, 148);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(310, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Blue;
